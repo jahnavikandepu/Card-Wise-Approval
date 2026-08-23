@@ -1,0 +1,86 @@
+{
+  "model_name": "Random Forest Classifier",
+  "algorithm": "Random Forest (n_estimators=150, max_depth=10, balanced)",
+  "dataset_filename": "clean_dataset.csv",
+  "training_date": "2026-08-23 15:17:17",
+  "samples_total": 690,
+  "samples_train": 552,
+  "samples_test": 138,
+  "features": {
+    "numerical": [
+      "Age",
+      "Debt",
+      "YearsEmployed",
+      "CreditScore",
+      "Income"
+    ],
+    "binary": [
+      "Gender",
+      "Married",
+      "BankCustomer",
+      "PriorDefault",
+      "Employed",
+      "DriversLicense"
+    ],
+    "categorical": [
+      "Industry",
+      "Ethnicity",
+      "Citizen"
+    ],
+    "selected_count": 14,
+    "all_selected": [
+      "Age",
+      "Debt",
+      "YearsEmployed",
+      "CreditScore",
+      "Income",
+      "Gender",
+      "Married",
+      "BankCustomer",
+      "PriorDefault",
+      "Employed",
+      "DriversLicense",
+      "Industry",
+      "Ethnicity",
+      "Citizen"
+    ]
+  },
+  "target_column": "Approved",
+  "target_mapping": {
+    "1": "APPROVED",
+    "0": "REJECTED"
+  },
+  "class_distribution": {
+    "approved_count": 307,
+    "rejected_count": 383
+  },
+  "metrics": {
+    "accuracy": 88.41,
+    "precision": 88.14,
+    "recall": 85.25,
+    "f1_score": 86.67,
+    "roc_auc": 95.85,
+    "confusion_matrix": [
+      [
+        70,
+        7
+      ],
+      [
+        9,
+        52
+      ]
+    ]
+  },
+  "feature_importances": {
+    "PriorDefault": 0.2982,
+    "YearsEmployed": 0.1157,
+    "CreditScore": 0.1056,
+    "Income": 0.0983,
+    "Employed": 0.081,
+    "Debt": 0.0756,
+    "Age": 0.0569,
+    "Industry_Healthcare": 0.0128,
+    "Ethnicity_Black": 0.0123,
+    "Married": 0.0115
+  }
+}
