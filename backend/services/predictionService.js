@@ -8,7 +8,7 @@ import axios from 'axios';
  */
 
 const ML_SERVICE_URL = process.env.ML_SERVICE_URL || 'http://localhost:8000';
-const ML_TIMEOUT_MS = 8000;
+const ML_TIMEOUT_MS = 60000;
 
 export const generatePrediction = async (applicationData) => {
   const targetUrl = `${ML_SERVICE_URL.replace(/\/$/, '')}/predict`;
