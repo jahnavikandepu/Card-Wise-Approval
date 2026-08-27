@@ -103,8 +103,8 @@ npm start
 - **Request Body (JSON)**:
 ```json
 {
-  "fullName": "Jahnavi K",
-  "email": "jahnavi.k@cardwise.io",
+  "fullName": "Alex Morgan",
+  "email": "alex.morgan@cardwise.io",
   "age": 26,
   "gender": "Female",
   "educationLevel": "Master's Degree",
@@ -137,7 +137,7 @@ npm start
   ],
   "data": {
     "id": "CW-1006",
-    "applicantName": "Jahnavi K",
+    "applicantName": "Alex Morgan",
     "score": 82,
     "prediction": "LIKELY ELIGIBLE",
     "risk": "Low Risk",
@@ -161,8 +161,8 @@ npm start
   "data": [
     {
       "id": "CW-1001",
-      "applicantName": "Jahnavi K",
-      "applicantEmail": "jahnavi.k@cardwise.io",
+      "applicantName": "Alex Morgan",
+      "applicantEmail": "alex.morgan@cardwise.io",
       "date": "2026-08-22",
       "score": 82,
       "prediction": "LIKELY ELIGIBLE",
@@ -206,8 +206,8 @@ npm start
   "success": true,
   "data": {
     "id": "CW-1001",
-    "applicantName": "Jahnavi K",
-    "applicantEmail": "jahnavi.k@cardwise.io",
+    "applicantName": "Alex Morgan",
+    "applicantEmail": "alex.morgan@cardwise.io",
     "date": "2026-08-22",
     "score": 82,
     "prediction": "LIKELY ELIGIBLE",
@@ -224,7 +224,7 @@ npm start
       { "step": "Result Available", "date": "22 Aug 2026, 10:15 AM", "completed": true }
     ],
     "details": {
-      "fullName": "Jahnavi K",
+      "fullName": "Alex Morgan",
       "age": 26,
       "gender": "Female",
       "education": "Master's Degree",

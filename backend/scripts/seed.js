@@ -7,8 +7,8 @@ dotenv.config();
 const sampleApplications = [
   {
     applicationId: 'CW-1001',
-    fullName: 'Jahnavi K',
-    email: 'jahnavi.k@cardwise.io',
+    fullName: 'Alex Morgan',
+    email: 'alex.morgan@example.com',
     age: 26,
     gender: 'Female',
     educationLevel: "Master's Degree",

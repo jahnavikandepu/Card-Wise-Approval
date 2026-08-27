@@ -25,9 +25,9 @@ const Profile = () => {
   const navigate = useNavigate();
 
   const [personalData, setPersonalData] = useState({
-    name: user?.name || 'Jahnavi K',
-    email: user?.email || 'jahnavi.k@cardwise.io',
-    phone: user?.phone || '+91 98765 43210'
+    name: user?.name || '',
+    email: user?.email || '',
+    phone: user?.phone || ''
   });
 
   const [creditData, setCreditData] = useState({
@@ -81,14 +81,14 @@ const Profile = () => {
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-slate-200/80">
         <div className="flex items-center gap-4">
           <div className="w-16 h-16 rounded-2xl bg-gradient-to-tr from-indigo-600 to-blue-500 text-white flex items-center justify-center text-2xl font-bold shadow-lg shadow-indigo-600/20">
-            {user?.name?.charAt(0) || 'J'}
+            {user?.name?.charAt(0) || 'U'}
           </div>
           <div>
             <h1 className="text-2xl font-extrabold text-slate-900 tracking-tight">
-              {user?.name || 'Jahnavi K'}
+              {user?.name || 'User Profile'}
             </h1>
             <p className="text-xs text-slate-500 mt-0.5 flex items-center gap-1.5">
-              <Mail className="w-3.5 h-3.5" /> {user?.email || 'jahnavi.k@cardwise.io'}
+              <Mail className="w-3.5 h-3.5" /> {user?.email || 'No email provided'}
             </p>
           </div>
         </div>

@@ -8,9 +8,9 @@ import InputField from '../components/common/InputField';
 
 const Login = () => {
   const [formData, setFormData] = useState({
-    email: 'jahnavi.k@cardwise.io',
-    password: 'password123',
-    rememberMe: true
+    email: '',
+    password: '',
+    rememberMe: false
   });
   const [errors, setErrors] = useState({});
   const [loading, setLoading] = useState(false);

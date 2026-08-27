@@ -116,7 +116,7 @@ curl http://localhost:8000/health
 curl -X POST http://localhost:8000/predict `
   -H "Content-Type: application/json" `
   -d '{
-    "fullName": "Jahnavi K",
+    "fullName": "Alex Morgan",
     "age": 27,
     "gender": "Female",
     "education": "Master'\''s Degree",

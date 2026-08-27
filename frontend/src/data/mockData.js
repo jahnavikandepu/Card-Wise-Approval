@@ -4,8 +4,8 @@
 
 export const mockUser = {
   id: 'usr-8821',
-  name: 'Jahnavi K',
-  email: 'jahnavi.k@cardwise.io',
+  name: 'Alex Morgan',
+  email: 'alex.morgan@cardwise.io',
   phone: '+91 98765 43210',
   avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&auto=format&fit=crop&q=80',
   role: 'user',
@@ -41,8 +41,8 @@ export const mockDashboardStats = {
 export const mockApplications = [
   {
     id: 'CW-1001',
-    applicantName: 'Jahnavi K',
-    applicantEmail: 'jahnavi.k@cardwise.io',
+    applicantName: 'Alex Morgan',
+    applicantEmail: 'alex.morgan@cardwise.io',
     date: '2026-08-22',
     score: 82,
     prediction: 'LIKELY ELIGIBLE',
@@ -59,7 +59,7 @@ export const mockApplications = [
       { step: 'Result Available', date: '22 Aug 2026, 10:15 AM', completed: true }
     ],
     details: {
-      fullName: 'Jahnavi K',
+      fullName: 'Alex Morgan',
       age: 26,
       gender: 'Female',
       education: "Master's Degree",

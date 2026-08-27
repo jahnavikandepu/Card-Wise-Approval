@@ -8,7 +8,7 @@ import InputField from '../components/common/InputField';
 
 const Register = () => {
   const [formData, setFormData] = useState({
-    fullName: 'Jahnavi K',
+    fullName: '',
     email: '',
     password: '',
     confirmPassword: '',
@@ -149,7 +149,7 @@ const Register = () => {
               type="text"
               value={formData.fullName}
               onChange={handleChange}
-              placeholder="e.g. Jahnavi K"
+              placeholder="e.g. Alex Morgan"
               icon={User}
               error={errors.fullName}
               required

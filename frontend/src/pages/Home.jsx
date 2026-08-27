@@ -62,7 +62,7 @@ const Home = () => {
         <div className="lg:col-span-5 flex flex-col items-center justify-center relative">
           <div className="w-full max-w-md">
             <CreditCard
-              holderName="JAHNAVI K"
+              holderName="CARDHOLDER NAME"
               cardNumber="•••• •••• •••• 4821"
               validThru="12/29"
               cardType="AI ELITE MEMBER"

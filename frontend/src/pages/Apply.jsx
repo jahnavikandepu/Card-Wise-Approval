@@ -37,27 +37,27 @@ const Apply = () => {
   const [currentStep, setCurrentStep] = useState(1);
   const [formData, setFormData] = useState({
     // Step 1: Personal
-    fullName: user?.name || 'Jahnavi K',
-    email: user?.email || 'jahnavi.k@cardwise.io',
-    age: '26',
-    gender: 'Female',
-    education: "Master's Degree",
-    maritalStatus: 'Single',
-    dependents: '0',
+    fullName: '',
+    email: '',
+    age: '',
+    gender: '',
+    education: '',
+    maritalStatus: '',
+    dependents: '',
 
     // Step 2: Financial
-    employmentStatus: 'Employed Full-Time',
-    employmentYears: '3',
-    annualIncome: '650000',
-    monthlyIncome: '54000',
-    monthlyExpenses: '22000',
-    existingLoans: '1',
+    employmentStatus: '',
+    employmentYears: '',
+    annualIncome: '',
+    monthlyIncome: '',
+    monthlyExpenses: '',
+    existingLoans: '',
 
     // Step 3: Credit
-    creditScore: '742',
-    creditUtilization: '28',
+    creditScore: '',
+    creditUtilization: '',
     previousDefaults: 'no',
-    creditHistoryLength: '4'
+    creditHistoryLength: ''
   });
 
   const [errors, setErrors] = useState({});
@@ -152,7 +152,7 @@ const Apply = () => {
                 name="fullName"
                 value={formData.fullName}
                 onChange={handleChange}
-                placeholder="e.g. Jahnavi K"
+                placeholder="e.g. Alex Morgan"
                 error={errors.fullName}
                 required
               />

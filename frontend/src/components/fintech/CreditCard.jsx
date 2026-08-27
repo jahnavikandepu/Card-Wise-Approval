@@ -2,7 +2,7 @@ import React from 'react';
 import { Wifi, Sparkles } from 'lucide-react';
 
 const CreditCard = ({
-  holderName = 'JAHNAVI K',
+  holderName = 'CARDHOLDER NAME',
   cardNumber = '•••• •••• •••• 4821',
   validThru = '12/29',
   cardType = 'PLATINUM ELITE',

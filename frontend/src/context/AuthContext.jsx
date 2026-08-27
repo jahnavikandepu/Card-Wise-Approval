@@ -13,15 +13,19 @@ export const AuthProvider = ({ children }) => {
     const savedUser = localStorage.getItem('cardwise_user');
     if (savedUser) {
       try {
-        setUser(JSON.parse(savedUser));
+        const parsed = JSON.parse(savedUser);
+        if (parsed?.name === 'Jahnavi K' || parsed?.email?.includes('jahnavi')) {
+          localStorage.removeItem('cardwise_user');
+          setUser(null);
+        } else {
+          setUser(parsed);
+        }
       } catch (e) {
         console.error('Failed to parse user session', e);
-        setUser(mockUser);
+        setUser(null);
       }
     } else {
-      // Default to mockUser so pages like dashboard and apply work seamlessly out of the box
-      setUser(mockUser);
-      localStorage.setItem('cardwise_user', JSON.stringify(mockUser));
+      setUser(null);
     }
     setLoading(false);
   }, []);
